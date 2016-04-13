@@ -1,0 +1,21 @@
+{
+  "name": "MapDraw",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start"
+  },
+  "dependencies": {
+    "react": "^0.14.8",
+    "react-addons-update": "^0.14.8",
+    "react-native": "^0.23.1",
+    "react-native-maps": "lelandrichardson/react-native-maps#master"
+  },
+  "devDependencies": {
+    "babel-eslint": "^6.0.0",
+    "eslint": "^2.4.0",
+    "eslint-config-airbnb": "^6.1.0",
+    "eslint-plugin-react": "^4.2.3",
+    "eslint-plugin-react-native": "^1.0.0"
+  }
+}

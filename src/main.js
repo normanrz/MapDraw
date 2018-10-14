@@ -1,17 +1,17 @@
-import React, {
-  AppRegistry,
-  Component,
-} from 'react-native';
-import { Provider } from 'react-redux';
-import store from './store';
-import MapScreen from './MapScreen';
+import React, { Component } from "react";
+import { AppRegistry, SafeAreaView } from "react-native";
+import { Provider } from "react-redux";
+import store from "./store";
+import MapScreen from "./MapScreen";
 
-class Root extends Component {
-  render() {
-    return <Provider store={store}>
-      <MapScreen />
-    </Provider>;
-  }
+function Root() {
+  return (
+    <Provider store={store}>
+      <SafeAreaView style={{ flex: 1, backgroundColor: "#292D33" }}>
+        <MapScreen />
+      </SafeAreaView>
+    </Provider>
+  );
 }
 
-AppRegistry.registerComponent('MapDraw', () => Root);
+AppRegistry.registerComponent("MapDraw", () => Root);
